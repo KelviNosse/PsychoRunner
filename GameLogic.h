@@ -14,6 +14,14 @@ void playerJump()
       if(player_posY <= 50)
         landing = true;
         
+      if(!landing)
+      {
+        if(isDiving)
+        {
+        landing = true;
+        }
+      }
+      
       if(landing)
       {
         if(isGliding)
